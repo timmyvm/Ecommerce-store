@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eCommerce App</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/88a0810fa9.js"
       crossorigin="anonymous"
@@ -12,7 +13,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="nav">
       <div class="nav_container">
         <figure class="nav_logo_wrapper">
           <img
@@ -27,6 +28,20 @@
             ><i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
+        <button class="nav_menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <nav class="menu">
+      <button class="menu_close" onclick="closeMenu()">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="menu_links">
+        <a href="" class="menu_link" onclick="closeMenu()">Home</a>
+        <a href="" class="menu_link" onclick="closeMenu()">Products</a>
+        <a href="" class="menu_link" onclick="closeMenu()">Cart</a>
       </div>
     </nav>
     <!-- Header -->
